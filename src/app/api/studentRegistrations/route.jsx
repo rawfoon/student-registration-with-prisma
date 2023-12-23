@@ -13,7 +13,7 @@ export async function POST(req,res){
         })
 
 
-            return NextResponse.json({status:"success", data: reqBody})
+            return NextResponse.json({status:"success", data: result})
     }
 
     catch (e) {
