@@ -8,7 +8,7 @@ export async function POST(req,res){
         // console.log(id);
 
         const prisma = new PrismaClient()
-        let result = await prisma.Users.delete({
+        let result = await prisma.user.delete({
             where:{id:id}
         })
         return NextResponse.json({status:"success", data: result})

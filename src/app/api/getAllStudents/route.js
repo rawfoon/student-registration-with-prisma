@@ -7,7 +7,7 @@ export async function POST(req,res){
     try{
      
         const prisma = new PrismaClient()
-        let result = await prisma.Users.findMany()
+        let result = await prisma.user.findMany()
 
 
             return NextResponse.json({status:"success", data: result})

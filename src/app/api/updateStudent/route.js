@@ -12,7 +12,7 @@ export async function POST(req,res){
         const reqBody = await req.json()
 
         const prisma = new PrismaClient()
-        let result = await prisma.Users.update({
+        let result = await prisma.user.update({
             where:{id:id},
             data: reqBody
 

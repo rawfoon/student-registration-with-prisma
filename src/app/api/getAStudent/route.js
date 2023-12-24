@@ -10,7 +10,7 @@ export async function POST(req,res){
         // console.log(id);
      
         const prisma = new PrismaClient()
-        let result = await prisma.Users.findMany({
+        let result = await prisma.user.findMany({
             where:{id:id}
         })
 

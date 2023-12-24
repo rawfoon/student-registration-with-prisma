@@ -8,7 +8,7 @@ export async function POST(req,res){
         const reqBody = await req.json()
 
         const prisma = new PrismaClient()
-        let result = await prisma.Users.create({
+        let result = await prisma.user.create({
             data: reqBody
         })
 
